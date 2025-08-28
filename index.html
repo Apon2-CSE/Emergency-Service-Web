@@ -56,7 +56,7 @@
         </div>
       </div>
     </nav>
-    <section class="w-full bg-gradient-to-r from-green-700 to-green-600 h-full">
+    <section class="w-full bg-gradient-to-b from-[#013223] via-[#006747] to-[#013223] h-full">
       <div class="">
         <div class=" flex items-center justify-center ">
           <img
@@ -76,10 +76,10 @@
     </section>
 
     <main class="p-6 grid lg:grid-cols-3 gap-1 ">
-      <section class="lg:col-span-2 mb-3">
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3">
+      <section class="lg:col-span-2 mb-3 min-h-screen flex justify-center items-start">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
           <div
-            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
+            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5 "
           >
             <div class="flex items-end justify-between">
               <img
@@ -116,7 +116,7 @@
             </div>
           </div>
         
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-3">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div
             class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
           >
@@ -430,15 +430,16 @@
           </div>
         </div>
         </div>
-      </section>
+       </section>
      <section class="bg-white shadow rounded-2xl p-4 ">
        <div class="flex justify-between items-center mb-4">
          <h2 class="text-xl font-bold flex items-center gap-2">Call History</h2>
        
        <button id="classHistory" class="text-sm text-white bg-green-500 w-[150px] h-[40px] rounded-4xl">Clear History</button>
        </div>
-       <ul id="historyList" class="space-y-2 text-gray-700 text-sm"></ul>
+      <ul id="historyList" class="space-y-2 text-gray-700 text-sm"></ul>
      </section>
+      
     </main>
     <script src="./src/index.js"></script>
   </body>
