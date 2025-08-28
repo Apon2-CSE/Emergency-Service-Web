@@ -4,10 +4,10 @@ let copyCount = 0;
 
 const heartCountE1 = document.getElementById("heartCount");
 const coinCountE1 = document.getElementById("coinCount");
-const copyCountE1 = document.getElementById("copyCount ");
-const historyList = document.getElementById("historyList");
+const copyCountE1 = document.getElementById("copyCount");
 
 //Heart Button
+
 document.querySelectorAll(".heartBtn").forEach((btn) => {
   btn.addEventListener("click", () => {
     heartCount++;
@@ -15,7 +15,8 @@ document.querySelectorAll(".heartBtn").forEach((btn) => {
   });
 });
 
-//copy Number
+//Copy Button
+
 document.querySelectorAll(".copyBtn").forEach((btn, i) => {
   btn.addEventListener("click", () => {
     const number = btn.parentElement.previousElementSibling.textContent;
@@ -26,29 +27,34 @@ document.querySelectorAll(".copyBtn").forEach((btn, i) => {
   });
 });
 
-//call button
+//Call Button
+
 document.querySelectorAll(".callBtn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const serviceName = btn.getAttribute("data-name");
     const serviceNumber = btn.getAttribute("data-number");
+
     if (coinCount < 20) {
-      alert("Not enough coins! You need coins per call");
+      alert("Not enough coins! You need 20 coins per call.");
       return;
     }
-
-    alert(`Calling ${serviceName} at ${serviceNumber}...`);
+    alert(`Calling ${serviceName} at ${serviceNumber}....`);
     coinCount -= 20;
-    copyCountE1.textContent = coinCount;
-    //Get Time
+    coinCountE1.textContent = coinCount;
+
+    //Get current time
+
     const callTime = new Date().toLocaleTimeString();
-    //add to history
+
+    //Add To history with time
 
     const li = document.createElement("li");
     li.textContent = `${serviceName} - ${serviceNumber} (at ${callTime})`;
     historyList.appendChild(li);
   });
 });
-//clear History
+
+//Clear Call History
 document.getElementById("classHistory").addEventListener("click", () => {
   historyList.innerHTML = "";
 });
