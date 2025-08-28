@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Hotline</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <nav class=" lg:flex justify-between items-center px-6 py-3 bg-white shadow-md">
+      <div class="flex  items-center gap-2">
+        <img class="w-[50px]" src="./assets/logo.png" alt="" />
+        <h1>
+          <span class="font-bold text-[#006747] text-2xl"
+            >Emergency <br />
+            Service</span
+          >
+        </h1>
+      </div>
+      <div class="flex items-center gap-6">
+        <div
+          class="flex items-center gap-1 border-1 border-white rounded-4xl bg-[#b5ecc1] w-[80px]"
+        >
+        
+            <span id="heartCount" class="text-[16px] font-bold p-[12px]">0</span>
+        
+          <img class="w-[20px]" src="./assets/heart.png" alt="" />
+        </div>
+        <div
+          class="flex items-center gap-1 border-1 border-white rounded-4xl bg-[#b5ecc1] w-[90px]"
+        >
+         
+            <span id="coinCount" class="text-[16px] font-bold p-[12px]">100</span>
+         
+          <img class="w-[20px]" src="./assets/coin.png" alt="" />
+        </div>
+
+        <div
+          class="flex items-center gap-1 border-1 border-white rounded-4xl bg-[#2ad64f] w-[90px]"
+        >
+         
+            <span id="copyCount" class="text-[14px] font-bold p-[16px]">0</span>Copy
+         
+        </div>
+      </div>
+    </nav>
+    <section class="w-full bg-gradient-to-r from-green-700 to-green-600 h-full">
+      <div class="">
+        <div class=" flex items-center justify-center ">
+          <img
+            class=" w-[92px] h-[92px] mt-10"
+            src="./assets/logo-dark.png"
+            alt="hero-logo"
+          />
+        </div>
+        <h1 class="text-4xl font-bold mt-5 text-center">
+          Emergency Service Directory
+        </h1>
+        <p class="mt-6 text-lg text-[14px] text-center ">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </section>
+
+    <main class="p-6 grid lg:grid-cols-3 gap-1 ">
+      <section class="lg:col-span-2 mb-3">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
+          >
+            <div class="flex items-end justify-between">
+              <img
+                class="w-[30px] bg-red-300"
+                src="./assets/emergency.png"
+                alt=""
+              />
+              <button class="heartBtn">
+                <span class="ml-45"><i class="fa-regular fa-heart"></i></span>
+              </button>
+            </div>
+
+            <h3 class="font-bold mt-5">National Emergency Number</h3>
+            <p class="text-gray-600">National Emergency</p>
+            <p class="font-bold mt-4 text-[25px]">999</p>
+            <p>
+              <span class="text-xs bg-gray-200 px-2 rounded-full mt-1"
+                >All</span
+              >
+            </p>
+            <div class="flex gap-5 mt-1">
+              <button
+                class="copyBtn border-1 border-gray-400 bg-white px-3 py-1 w-[120px] rounded flex items-center justify-center gap-1"
+              >
+                Copy
+              </button>
+              <button
+                class="callBtn bg-green-500 text-white px-3 py-1 w-[120px] rounded flex items-center mr-2 gap-1"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                📞<span class="justify-center"> Call</span>
+              </button>
+            </div>
+          </div>
+        
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-3">
+          <div
+            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
+          >
+            <div class="flex items-end justify-between">
+              <img
+                class="w-[30px] bg-red-300"
+                src="./assets/police.png"
+                alt=""
+              />
+              <button class="heartBtn">
+                <span class="ml-45"><i class="fa-regular fa-heart"></i></span>
+              </button>
+            </div>
+
+            <h3 class="font-bold mt-5">Police Helpline Number</h3>
+            <p class="text-gray-600">Police</p>
+            <p class="font-bold mt-4 text-[25px]">999</p>
+            <p>
+              <span class="text-xs bg-gray-200 px-2 rounded-full mt-1"
+                >Police</span
+              >
+            </p>
+            <div class="flex gap-5 mt-1">
+              <button
+                class="copyBtn border-1 border-gray-400 bg-white px-3 py-1 w-[120px] rounded flex items-center justify-center gap-1"
+              >
+                Copy
+              </button>
+              <button
+                class="callBtn bg-green-500 text-white px-3 py-1 w-[120px] rounded flex items-center mr-2 gap-1"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                📞<span class="justify-center"> Call</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-3">
+          <div
+            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
+          >
+            <div class="flex items-end justify-between">
+              <img
+                class="w-[30px] bg-red-300"
+                src="./assets/emergency.png"
+                alt=""
+              />
+              <button class="heartBtn">
+                <span class="ml-45"><i class="fa-regular fa-heart"></i></span>
+              </button>
+            </div>
+
+            <h3 class="font-bold mt-5">National Emergency Number</h3>
+            <p class="text-gray-600">National Emergency</p>
+            <p class="font-bold mt-4 text-[25px]">999</p>
+            <p>
+              <span class="text-xs bg-gray-200 px-2 rounded-full mt-1"
+                >All</span
+              >
+            </p>
+            <div class="flex gap-5 mt-1">
+              <button
+                class="copyBtn border-1 border-gray-400 bg-white px-3 py-1 w-[120px] rounded flex items-center justify-center gap-1"
+              >
+                Copy
+              </button>
+              <button
+                class="callBtn bg-green-500 text-white px-3 py-1 w-[120px] rounded flex items-center mr-2 gap-1"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                📞<span class="justify-center"> Call</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-3">
+          <div
+            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
+          >
+            <div class="flex items-end justify-between">
+              <img
+                class="w-[30px] bg-red-300"
+                src="./assets/fire-service.png"
+                alt=""
+              />
+              <button class="heartBtn">
+                <span class="ml-45"><i class="fa-regular fa-heart"></i></span>
+              </button>
+            </div>
+
+            <h3 class="font-bold mt-5">Fire Service Number</h3>
+            <p class="text-gray-600">Fire Service</p>
+            <p class="font-bold mt-4 text-[25px]">999</p>
+            <p>
+              <span class="text-xs bg-gray-200 px-2 rounded-full mt-1"
+                >Fire</span
+              >
+            </p>
+            <div class="flex gap-5 mt-1">
+              <button
+                class="copyBtn border-1 border-gray-400 bg-white px-3 py-1 w-[120px] rounded flex items-center justify-center gap-1"
+              >
+                Copy
+              </button>
+              <button
+                class="callBtn bg-green-500 text-white px-3 py-1 w-[120px] rounded flex items-center mr-2 gap-1"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                📞<span class="justify-center"> Call</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-3">
+          <div
+            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
+          >
+            <div class="flex items-end justify-between">
+              <img
+                class="w-[30px] bg-red-300"
+                src="./assets/ambulance.png"
+                alt=""
+              />
+              <button class="heartBtn">
+                <span class="ml-45"><i class="fa-regular fa-heart"></i></span>
+              </button>
+            </div>
+
+            <h3 class="font-bold mt-5">Ambulance Service</h3>
+            <p class="text-gray-600">Ambulance</p>
+            <p class="font-bold mt-4 text-[25px]">1994-999999</p>
+            <p>
+              <span class="text-xs bg-gray-200 px-2 rounded-full mt-1"
+                >Health</span
+              >
+            </p>
+            <div class="flex gap-5 mt-1">
+              <button
+                class="copyBtn border-1 border-gray-400 bg-white px-3 py-1 w-[120px] rounded flex items-center justify-center gap-1"
+              >
+                Copy
+              </button>
+              <button
+                class="callBtn bg-green-500 text-white px-3 py-1 w-[120px] rounded flex items-center mr-2 gap-1"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                📞<span class="justify-center"> Call</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-3">
+          <div
+            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
+          >
+            <div class="flex items-end justify-between">
+              <img
+                class="w-[30px] bg-red-300"
+                src="./assets/brac.png"
+                alt=""
+              />
+              <button class="heartBtn">
+                <span class="ml-45"><i class="fa-regular fa-heart"></i></span>
+              </button>
+            </div>
+
+            <h3 class="font-bold mt-5">Women & Child Helpline</h3>
+            <p class="text-gray-600">Women & Child Helpline</p>
+            <p class="font-bold mt-4 text-[25px]">109</p>
+            <p>
+              <span class="text-xs bg-gray-200 px-2 rounded-full mt-1"
+                >Help</span
+              >
+            </p>
+            <div class="flex gap-5 mt-1">
+              <button
+                class="copyBtn border-1 border-gray-400 bg-white px-3 py-1 w-[120px] rounded flex items-center justify-center gap-1"
+              >
+                Copy
+              </button>
+              <button
+                class="callBtn bg-green-500 text-white px-3 py-1 w-[120px] rounded flex items-center mr-2 gap-1"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                📞<span class="justify-center"> Call</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-3">
+          <div
+            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
+          >
+            <div class="flex items-end justify-between">
+              <img
+                class="w-[30px] bg-red-300"
+                src="./assets/emergency.png"
+                alt=""
+              />
+              <button class="heartBtn">
+                <span class="ml-45"><i class="fa-regular fa-heart"></i></span>
+              </button>
+            </div>
+
+            <h3 class="font-bold mt-5">Anti-Corruption Helpline</h3>
+            <p class="text-gray-600">Anti-Corruption</p>
+            <p class="font-bold mt-4 text-[25px]">10610</p>
+            <p>
+              <span class="text-xs bg-gray-200 px-2 rounded-full mt-1"
+                >Govt.</span
+              >
+            </p>
+            <div class="flex gap-5 mt-1">
+              <button
+                class="copyBtn border-1 border-gray-400 bg-white px-3 py-1 w-[120px] rounded flex items-center justify-center gap-1"
+              >
+                Copy
+              </button>
+              <button
+                class="callBtn bg-green-500 text-white px-3 py-1 w-[120px] rounded flex items-center mr-2 gap-1"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                📞<span class="justify-center"> Call</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-3">
+          <div
+            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
+          >
+            <div class="flex items-end justify-between">
+              <img
+                class="w-[30px] bg-red-300"
+                src="./assets/emergency.png"
+                alt=""
+              />
+              <button class="heartBtn">
+                <span class="ml-45"><i class="fa-regular fa-heart"></i></span>
+              </button>
+            </div>
+
+            <h3 class="font-bold mt-5">Electricity Helpline</h3>
+            <p class="text-gray-600">Electricity Outage</p>
+            <p class="font-bold mt-4 text-[25px]">16216</p>
+            <p>
+              <span class="text-xs bg-gray-200 px-2 rounded-full mt-1"
+                >Electricity</span
+              >
+            </p>
+            <div class="flex gap-5 mt-1">
+              <button
+                class="copyBtn border-1 border-gray-400 bg-white px-3 py-1 w-[120px] rounded flex items-center justify-center gap-1"
+              >
+                Copy
+              </button>
+              <button
+                class="callBtn bg-green-500 text-white px-3 py-1 w-[120px] rounded flex items-center mr-2 gap-1"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                📞<span class="justify-center"> Call</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+          <div
+            class="bg-white shadow rounded-2xl p-4 flex flex-col items-start text-start w-[300px] h-[250px] p-5"
+          >
+            <div class="flex items-end justify-between">
+              <img
+                class="w-[30px] bg-red-300"
+                src="./assets/emergency.png"
+                alt=""
+              />
+              <button class="heartBtn">
+                <span class="ml-45"><i class="fa-regular fa-heart"></i></span>
+              </button>
+            </div>
+
+            <h3 class="font-bold mt-5">Brac Helpline</h3>
+            <p class="text-gray-600">Brac</p>
+            <p class="font-bold mt-4 text-[25px]">16445</p>
+        
+            <p>
+              <span class="text-xs bg-gray-200 px-2 rounded-full mt-1"
+                >NGO</span
+              >
+            </p>
+            <div class="flex gap-5 mt-1">
+              <button
+                class="copyBtn border-1 border-gray-400 bg-white px-3 py-1 w-[120px] rounded flex items-center justify-center gap-1"
+              >
+                Copy
+              </button>
+              <button
+                class="callBtn bg-green-500 text-white px-3 py-1 w-[120px] rounded flex items-center mr-2 gap-1"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                📞<span class="justify-center"> Call</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+     <section class="bg-white shadow rounded-2xl p-4 ">
+       <div class="flex justify-between items-center mb-4">
+         <h2 class="text-xl font-bold flex items-center gap-2">Call History</h2>
+       
+       <button id="classHistory" class="text-sm text-white bg-green-500 w-[150px] h-[40px] rounded-4xl">Clear History</button>
+       </div>
+       <ul id="historyList" class="space-y-2 text-gray-700 text-sm"></ul>
+     </section>
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
