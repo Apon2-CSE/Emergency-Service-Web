@@ -1,11 +1,14 @@
 1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
-getElementById:
+
 getElementById("ID")
 =>Select a single element by its id.Return one element,ID is must me unique.
+
 getElementsByClassName
 =>Selects elements by their class.Returns an HTMLCollection.Can Select multiple elements.
+
 querySelector
 =>select the first element that matches a CSS selector.Returns a single element.
+
 querySelectorAll
 =>Selects all element that match a CSS selector.Returns a NodeList.
 
