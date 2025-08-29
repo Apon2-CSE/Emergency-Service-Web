@@ -38,7 +38,7 @@ document.querySelectorAll(".callBtn").forEach((btn) => {
       alert("Not enough coins! You need 20 coins per call.");
       return;
     }
-    alert(`Calling ${serviceName} at ${serviceNumber}....`);
+    alert(`📞Calling ${serviceName} at ${serviceNumber}....`);
     coinCount -= 20;
     coinCountE1.textContent = coinCount;
 
@@ -49,7 +49,7 @@ document.querySelectorAll(".callBtn").forEach((btn) => {
     //Add To history with time
 
     const div = document.createElement("div");
-    div.className = "p-3  rounded-lg shadow-sm bg-gray-50";
+    div.className = "p-3  rounded-lg shadow-sm bg-gray-50 ";
     div.textContent = `${serviceName} - ${serviceNumber} (at ${callTime})`;
     historyList.appendChild(div);
   });
