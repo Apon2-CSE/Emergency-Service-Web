@@ -48,9 +48,10 @@ document.querySelectorAll(".callBtn").forEach((btn) => {
 
     //Add To history with time
 
-    const li = document.createElement("li");
-    li.textContent = `${serviceName} - ${serviceNumber} (at ${callTime})`;
-    historyList.appendChild(li);
+    const div = document.createElement("div");
+    div.className = "p-3  rounded-lg shadow-sm bg-gray-50";
+    div.textContent = `${serviceName} - ${serviceNumber} (at ${callTime})`;
+    historyList.appendChild(div);
   });
 });
 
